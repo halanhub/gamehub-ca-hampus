@@ -94,7 +94,7 @@ function updateCartSummary(items) {
             <span>Total:</span>
             <span>$${total.toFixed(2)}</span>
         </div>
-                    <a href="/checkout/confirmation/" class="btn btn-success" style="width: 100%; margin-top: 1rem;" id="proceed-checkout">
+                    <a href="confirmation/" class="btn btn-success" style="width: 100%; margin-top: 1rem;" id="proceed-checkout">
                         Proceed to Checkout
                     </a>
     `
@@ -137,7 +137,7 @@ function addProceedToCheckoutListener() {
             // Clear the cart when proceeding to checkout
             clearCart()
             sessionStorage.setItem('checkout-completed', 'true')
-            window.location.href = '/checkout/confirmation/?checkout=true'
+            window.location.href = 'confirmation/?checkout=true'
         })
     }
 }
