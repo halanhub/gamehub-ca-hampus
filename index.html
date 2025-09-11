@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GameHub - Your Ultimate Gaming Destination</title>
+    <meta name="description" content="Discover and buy the latest video games at GameHub. From horror titles to sport gems, find your next gaming adventure.">
+    <link rel="stylesheet" href="/assets/css/styles.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <a href="/" class="logo">GameHub</a>
+                <nav>
+                    <ul>
+                        
+                        <li><a href="/checkout/" class="cart-link">Cart</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="container">
+                <h1>Welcome to GameHub</h1>
+                <p>Your ultimate destination for video games. From horror titles to sport gems, discover your next gaming adventure.</p>
+                
+            </div>
+        </section>
+
+        <div class="container">
+            <section class="filter-bar">
+                <h2>Quick Filters</h2>
+                <div class="filter-group">
+                    <label for="filterSelectCategory">Category:</label>
+                    <select id="filterSelectCategory" name="category">
+                        <option value="">All Categories</option>
+                        <option value="action">Action</option>
+                        <option value="adventure">Adventure</option>
+                        <option value="horror">Horror</option>
+                        <option value="sports">Sports</option>
+                    </select>
+                </div>
+            </section>
+
+            <section>
+                <h2>Browse Games</h2>
+                <div id="container" class="product-grid">
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div>
+                    <p>&copy; 2025 GameHub. Your ultimate gaming destination.</p>
+                </div>
+                <div class="footer-links">
+                    <a href="/legal/terms.html">Terms & Conditions</a>
+                    <a href="/legal/privacy.html">Privacy Policy</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="cart.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
