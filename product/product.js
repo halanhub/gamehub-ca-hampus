@@ -21,6 +21,9 @@ async function fetchAndCreateProduct(){
         const data = await response.json()
         const product = data.data
 
+        // Clear loading state
+        container.innerHTML = ''
+
         const productDiv = document.createElement("div")
         const productGallery = document.createElement("div")
         const productInfo = document.createElement("div")
